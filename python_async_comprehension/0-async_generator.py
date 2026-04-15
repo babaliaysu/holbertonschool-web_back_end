@@ -1,17 +1,12 @@
 #!/usr/bin/env python3
-"""
-Bu modulda 10 dəfə dövr edən və hər dəfə 1 saniyə gözləyən
-asinxron generator funksiyası yerləşir.
-"""
+"""Module for async generator."""
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
-    """
-    10 dəfə dövr edir, hər dəfə asinxron olaraq 1 saniyə gözləyir
-    və 0 ilə 10 arasında təsadüfi bir ədəd qaytarır (yield).
-    """
+async def async_generator() -> Generator[float, None, None]:
+    """Yield a random number between 0 and 10, ten times."""
     for _ in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
