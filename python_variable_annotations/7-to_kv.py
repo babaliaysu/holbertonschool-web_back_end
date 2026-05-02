@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """
-Takes a string k and an int OR float v as arguments and
-returns a tuple.
-The first element of the tuple is the string k
-The second element is the square of the int/float v annotated as a float
+Module for creating a tuple from string and int/float.
 """
-
 from typing import Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    """Returns a tuple: (string 'k', square of int/float 'v' as a float)"""
+    """
+    Create a tuple with string and square of int/float.
+
+    Args:
+        k: String key
+        v: Integer or float value
+
+    Returns:
+        Tuple with string and square of v as float
+    """
     return (k, v ** 2)

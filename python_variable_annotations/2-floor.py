@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """
-Function 'floor' which takes a float n as an argument
+Module for getting the floor of a float.
 """
-
-import math
 
 
 def floor(n: float) -> int:
-    """Returns the floor of the float 'n'"""
-    return math.floor(n)
+    """
+    Return the floor of a float.
+
+    Args:
+        n: Float number to floor
+
+    Returns:
+        The floor of n as an integer
+    """
+    return int(n)

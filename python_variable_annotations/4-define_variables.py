@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-""" Defines and annotates the following variables """
-
+"""
+Module for defining and annotating variables.
+"""
 
 a: int = 1
 pi: float = 3.14

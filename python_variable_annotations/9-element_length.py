@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
-""" Element_length: Iterable 'lst' -> List[Tuple[Sequence, int]] """
-
+"""
+Module for duck typing an iterable object.
+"""
 from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """Returns list of tuples: elements from 'lst' and their lengths"""
+    """
+    Return list of tuples with elements and their lengths.
+
+    Args:
+        lst: An iterable of sequences
+
+    Returns:
+        List of tuples containing each element and its length
+    """
     return [(i, len(i)) for i in lst]
